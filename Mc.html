@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions">
+  <head>
+    <title>Molecular construction for petroleum fraction</title>
+    <meta content="TeXmacs 2.1" name="generator"></meta>
+    <style type="text/css">
+      body { text-align: justify } h5 { display: inline; padding-right: 1em }
+      h6 { display: inline; padding-right: 1em } table { border-collapse:
+      collapse } td { padding: 0.2em; vertical-align: baseline } dt { float:
+      left; min-width: 1.75em; text-align: right; padding-right: 0.75em;
+      font-weight: bold; } dd { margin-left: 2.75em; padding-bottom: 0.25em; }
+      dd p { padding-top: 0em; } .subsup { display: inline; vertical-align:
+      -0.2em } .subsup td { padding: 0px; text-align: left} .fraction {
+      display: inline; vertical-align: -0.8em } .fraction td { padding: 0px;
+      text-align: center } .wide { position: relative; margin-left: -0.4em }
+      .accent { position: relative; margin-left: -0.4em; top: -0.1em }
+      .title-block { width: 100%; text-align: center } .title-block p {
+      margin: 0px } .compact-block p { margin-top: 0px; margin-bottom: 0px }
+      .left-tab { text-align: left } .center-tab { text-align: center }
+      .balloon-anchor { border-bottom: 1px dotted #000000; outline: none;
+      cursor: help; position: relative; } .balloon-anchor [hidden] {
+      margin-left: -999em; position: absolute; display: none; }
+      .balloon-anchor: hover [hidden] { position: absolute; left: 1em; top:
+      2em; z-index: 99; margin-left: 0; width: 500px; display: inline-block; }
+      .balloon-body { } .ornament { border-width: 1px; border-style: solid;
+      border-color: black; display: inline-block; padding: 0.2em; } .right-tab
+      { float: right; position: relative; top: -1em; } .no-breaks {
+      white-space: nowrap; } 
+    </style>
+  </head>
+  <body>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 168.2%"><strong>Molecular construction for petroleum
+            fraction</strong></font></td>
+          </tr>
+        </table><table class="title-block" style="margin-top: 0.25em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 129.7%"><strong>by Maximum Shannon entropy &amp;
+            Stochastic reconstruction</strong></font></td>
+          </tr>
+        </table><div class="compact-block" style="margin-top: 1em; margin-bottom: 1em">
+          <table class="title-block">
+            <tr>
+              <td><p style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <div style="display: inline">
+                  <span style="margin-left: 0pt"></span>
+                </div>
+                <table style="display: inline-table; vertical-align: middle">
+                  <tbody><tr>
+                    <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-bottom: 0em; padding-top: 0em; width: 100%"><center>
+                      <p>
+                        <class style="font-variant: small-caps">by Thien NguyeN</class>
+                      </p>
+                    </center></td>
+                  </tr></tbody>
+                </table>
+              </p></td>
+            </tr>
+          </table>
+        </div><table class="title-block" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <tr>
+            <td><i>November 2, 2021</i></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <h2 id="auto-1">1<span style="margin-left: 1em"></span>Summary of techniques used in molecular
+    construction<span style="margin-left: 1em"></span></h2>
+    <ul>
+      <li>
+        <p>
+          Select Molecular libary
+        </p>
+        <ul>
+          <li>
+            <p>
+              Determinictis method: Select pure component base on knownledge/
+              well analyzed sample
+            </p>
+          </li>
+          <li>
+            <p>
+              Stocastic method: Using Motecarlo simulation to select thousands
+              of molecule stochasticly <img src="Mc-1.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0206868686868687em; margin-right: -0.0206868686868689em; margin-top: -5.65656565656603e-4em; vertical-align: 0em; height: 0.486707070707071em"></img> Using it when
+              cannot analyze sample <img src="Mc-1.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0206868686868687em; margin-right: -0.0206868686868689em; margin-top: -5.65656565656603e-4em; vertical-align: 0em; height: 0.486707070707071em"></img> heavy fraction
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Represent molecular libary
+        </p>
+        <ul>
+          <li>
+            <p>
+              By pure component: When the molecular libary is small (10x ~
+              100x)
+            </p>
+          </li>
+          <li>
+            <p>
+              By SOL (Structure oriented lump) method: 
+            </p>
+          </li>
+          <li>
+            <p>
+              By MTHS (Molecular type homogulus series): Using when we don't
+              consider isomer
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Calculate pure properties
+        </p>
+        <ul>
+          <li>
+            <p>
+              Properties from database (<class style="font-variant: small-caps">Aspen Plus, Nist,
+              Dortmund database)</class> <img src="Mc-1.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0206868686868687em; margin-right: -0.0206868686868689em; margin-top: -5.65656565656603e-4em; vertical-align: 0em; height: 0.486707070707071em"></img> suitable for
+              deterministic method, pure component
+            </p>
+          </li>
+          <li>
+            <p>
+              Group constribution method <img src="Mc-1.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0206868686868687em; margin-right: -0.0206868686868689em; margin-top: -5.65656565656603e-4em; vertical-align: 0em; height: 0.486707070707071em"></img> suitable for
+              stochastic method, MTHS, SOL
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Calculate mixture properties
+        </p>
+        <ul>
+          <li>
+            <p>
+              Non-linear mixing rules: Use with any bulk properties, can
+              consider non-ideality <img src="Mc-1.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0206868686868687em; margin-right: -0.0206868686868689em; margin-top: -5.65656565656603e-4em; vertical-align: 0em; height: 0.486707070707071em"></img> suitable for
+              regression method.
+            </p>
+          </li>
+          <li>
+            <p>
+              Linear mixing rules: Apply for some comercial indices
+              (Distillation curve, Elemental analysis, PIONA analysis, density
+              <span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span
+              style="margin-left: 0.16665em"></span>) <img src="Mc-1.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0206868686868687em; margin-right: -0.0206868686868689em; margin-top: -5.65656565656603e-4em; vertical-align: 0em; height: 0.486707070707071em"></img> suitable for maximizing
+              entropy method.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Adjust molar fraction
+        </p>
+        <ul>
+          <li>
+            <p>
+              Regression method: Adjust molarfraction to fit the calculated
+              bulk properties with measured bulk properties. The molar
+              fraction could be assumed follow some distribution (<img src="Mc-2.png"
+              style="margin-left: -0.0206868686868687em; margin-bottom: -0.0103838383838384em; margin-right: -0.0827474747474747em; margin-top: -0.0109090909090909em; vertical-align: -0.0103030303030303em; height: 0.486707070707071em"></img> distribution, Gaussiant distribution, <span style="margin-left: 0.16665em"></span>.<span
+              style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span> ) to
+              reduce the degree of freedom.
+            </p>
+          </li>
+          <li>
+            <p>
+              Maximizing entropy method: Use bulk properties as constrain and
+              Shannon entropy function is objective function to optimize.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Transfer to the assay: Transfer result back to the molecular libary
+          (pure component, SOL, MTHS <span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span
+          style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span> )
+        </p>
+      </li>
+    </ul>
+    <h2 id="auto-2">2<span style="margin-left: 1em"></span>Methodology<span style="margin-left: 1em"></span></h2>
+    <h3 id="auto-3">2.1<span style="margin-left: 1em"></span>Description Of The Molecular Reconstruction
+    Method By Entropy Maximization<span style="margin-left: 1em"></span></h3>
+    <p>
+      The feedstock reconstruction by entropy maximization is based on the
+      Shannon's information theory. From this theory, Shannon defines an
+      entropic criterion as follows:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-3.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: 0em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(1)</td>
+      </tr>
+    </table>
+    <p>
+      with
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-4.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(2)</td>
+      </tr>
+    </table>
+    <p>
+      <b><b><img src="Mc-5.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.00319191919191919em; margin-right: -0.0206868686868686em; margin-top: -0.0268686868686868em; vertical-align: -0.210060606060606em; height: 0.930909090909091em"></img></b></b> represents the Shannon entropy,
+      <img src="Mc-6.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0103838383838384em; margin-right: -0.103434343434343em; margin-top: 0em; vertical-align: -0.0103030303030303em; height: 0.693010101010101em"></img> is the number of molecule in libary and <img
+      src="Mc-7.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: -0.0206868686868687em; vertical-align: -0.148242424242424em; height: 0.614262626262626em"></img> is the molar fraction of component i while <img src="Mc-8.png"
+      style="margin-left: -0.0206868686868687em; margin-bottom: -0.0206868686868687em; margin-right: -0.0302222222222222em; margin-top: 0em; vertical-align: 0em; height: 0.693010101010101em"></img> is vector that contain the molar fraction of all molecules
+      in libary . To summarize, Shannon's entropy is a measure of the
+      homogeneity of the probability distribution. The higher the entropy
+      value, the more uniform the distribution is. When the criterion is
+      associated with constraints, maximizing the Shannon entropy is
+      equivalent to determining the most uniform distribution which verifies
+      these constraints.
+    </p>
+    <h3 id="auto-4">2.2<span style="margin-left: 1em"></span>Maximize entropy without constrain<span
+    style="margin-left: 1em"></span></h3>
+    <p>
+      When there are no constraints (except the sum of molar fractions which
+      must always be equal to 1), the introduction of the mole fraction
+      balance (Eq. 2) by means of a Lagrange multiplier &mu; into the Shannon
+      entropy criterion (Eq. 1) applied to the mole fractions leads to the
+      following constrained criterion:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-9.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0542222222222222em; margin-right: 0em; margin-top: -0.0692525252525253em; vertical-align: -1.23365656565657em; height: 2.96945454545455em"></img></td>
+        <td align="right">(3)</td>
+      </tr>
+    </table>
+    <p>
+      At the optimum, if a solution exists, the following relations must be
+      satisfied:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-10.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.103434343434344em; margin-top: 0em; vertical-align: -0.758464646464646em; height: 2.1030303030303em"></img></td>
+        <td align="right">(4)</td>
+      </tr>
+    </table>
+    <p>
+      Or
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-11.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: -0.0413737373737374em; vertical-align: -0.148242424242424em; height: 1.00153535353535em"></img></td>
+        <td align="right">(5)</td>
+      </tr>
+    </table>
+    <p>
+      By summing Equation (5) for i = 1 to N, we obtain:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-12.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.103434343434343em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(6)</td>
+      </tr>
+    </table>
+    <p>
+      Introducing <img src="Mc-13.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0103838383838384em; margin-right: -0.103434343434343em; margin-top: -0.0413737373737374em; vertical-align: -0.0103030303030303em; height: 0.873979797979798em"></img> in Equation (8), one finally
+      obtains:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-14.png" style="margin-left: -0.0206868686868687em; margin-bottom: -0.0103838383838384em; margin-right: -0.103434343434343em; margin-top: -0.0413737373737375em; vertical-align: -0.620525252525253em; height: 1.92375757575758em"></img></td>
+        <td align="right">(7)</td>
+      </tr>
+    </table>
+    <p>
+      The first characteristic of the entropy maximization is then verified.
+      Without constraints, the distribution of the compounds in the database
+      is uniform. All the molar fractions are equal to  , with N the total
+      number of compounds of the database.
+    </p>
+    <h3 id="auto-5">2.3<span style="margin-left: 1em"></span>Maximize entropy with constrain<span style="margin-left: 1em"></span></h3>
+    <p>
+      The various properties of the mixture can be obtained from the pure
+      component properties of each compound (<span class="no-breaks"><img src="Mc-15.png" style="margin-left: -0.103434343434343em; margin-bottom: 0.0413333333333333em; margin-right: -0.0206868686868686em; margin-top: 0em; vertical-align: -0.386949494949495em; height: 1.13769696969697em"></img>)</span>
+      and the mixture composition <img src="Mc-16.png" style="margin-left: 0em; margin-bottom: 0.00319191919191919em; margin-right: 0em; margin-top: -0.0268686868686868em; vertical-align: -0.210060606060606em; height: 0.930909090909091em"></img> via the
+      corresponding mixing rules (F(<b>X</b>)) of each property j. The
+      calculated mixture properties <img src="Mc-18.png" style="margin-left: 0em; margin-bottom: 0.0413333333333333em; margin-right: 0em; margin-top: -0.0268686868686868em; vertical-align: -0.293010101010101em; height: 0.975717171717172em"></img> can now be
+      compared to the experimental values of each property <img src="Mc-19.png" style="margin-left: 0em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.0268686868686868em; vertical-align: -0.31369696969697em; height: 1.02743434343434em"></img>
+      for the petroleum fraction to be reconstructed. This therefore leads to
+      the following set of exact constraints:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-20.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.0268686868686868em; vertical-align: -0.31369696969697em; height: 1.02743434343434em"></img></td>
+        <td align="right">(8)</td>
+      </tr>
+    </table>
+    <p>
+      We use the method of Lagrange multipliers: first calculate the
+      unconditional maximum of the original function plus the constraints
+      added with some multiplying factors (<span class="no-breaks"><img src="Mc-21.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333333em; margin-right: -0.062060606060606em; margin-top: 0em; vertical-align: -0.293010101010101em; height: 0.975717171717172em"></img>,</span>
+      the Lagrange multipliers), which give the probabilities in a functional
+      form with the Lagrange multipliers as parameters.
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-22.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333332em; margin-right: 0em; margin-top: -0.0692525252525253em; vertical-align: -1.26909090909091em; height: 3.01777777777778em"></img></td>
+        <td align="right">(9)</td>
+      </tr>
+    </table>
+    <p>
+      The problem now has (N+J) variables (N variables is from <img src="Mc-23.png"
+      style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868688em; margin-top: -0.0206868686868687em; vertical-align: -0.148242424242424em; height: 0.614262626262626em"></img> to <img src="Mc-24.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0103030303030303em; margin-right: -0.0724040404040404em; margin-top: -0.0206868686868687em; vertical-align: -0.158545454545455em; height: 0.614262626262626em"></img> and J variable from <img src="Mc-25.png"
+      style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: 0em; vertical-align: -0.148242424242424em; height: 0.872282828282828em"></img> to <span class="no-breaks"><img src="Mc-21.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333333em; margin-right: -0.062060606060606em; margin-top: 0em; vertical-align: -0.293010101010101em; height: 0.975717171717172em"></img>)</span> and
+      optimize this is not a trivial task. When the mixing rules are linear or
+      can be transformed into linear mixing rules, a semi-algebraic resolution
+      of the maximization problem can be derived. In such a case, the mixing
+      rules of Equation (8) can be transformed into J exact linear
+      constraints, which are grouped together into a matrix system:
+    </p>
+    <p>
+      <img src="Mc-26.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868678em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img>
+    </p>
+    <p>
+      To obtain a formal solution we proceed in a similar way before, maximise
+      the information entropy using Lagrange multipliers:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-27.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333332em; margin-right: 0em; margin-top: -0.0692525252525253em; vertical-align: -1.26909090909091em; height: 3.01777777777778em"></img></td>
+        <td align="right">(11)</td>
+      </tr>
+    </table>
+    <p>
+      After deriving Equation (11) with respect to all <img src="Mc-28.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: -0.0206868686868687em; vertical-align: -0.148242424242424em; height: 0.614262626262626em"></img>
+      , the following relations are found:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-29.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333332em; margin-right: -0.0206868686868695em; margin-top: -0.0206868686868686em; vertical-align: -1.26909090909091em; height: 2.94941414141414em"></img></td>
+        <td align="right">(12)</td>
+      </tr>
+    </table>
+    <p>
+      This leads to:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-30.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333332em; margin-right: 0em; margin-top: -0.0692525252525253em; vertical-align: -1.26909090909091em; height: 3.01777777777778em"></img></td>
+        <td align="right">(13)</td>
+      </tr>
+    </table>
+    <p>
+      Therefore:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-31.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333332em; margin-right: 0em; margin-top: -0.0692525252525251em; vertical-align: -1.26909090909091em; height: 4.25107070707071em"></img></td>
+        <td align="right">(14)</td>
+      </tr>
+    </table>
+    <h4 id="auto-6">2.3.1<span style="margin-left: 1em"></span>Type of constrain<span style="margin-left: 1em"></span></h4>
+    <p>
+      To use the reduce form, the mixing rule must be writen under linear
+      form:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-32.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(15)</td>
+      </tr>
+    </table>
+    <p>
+      The constrains could be modified to diference form:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-33.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868695em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(16)</td>
+      </tr>
+    </table>
+    <p>
+      Or
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-34.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868678em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(17)</td>
+      </tr>
+    </table>
+    <p>
+      <div style="display: inline">
+        <a id="auto-7"></a>
+      </div>
+      <h5>a) PIONA analysis<span style="margin-left: 1em"></span></h5>
+    </p>
+    <ul>
+      <li>
+        <p>
+          What is PIONA analysis ?
+        </p>
+      </li>
+      <li>
+        <p>
+          The result from PIONA analysis ?
+        </p>
+        <ul>
+          <li>
+            <p>
+              Total mass fraction of Paraffins (P), Iso-paraffins (I), Olefins
+              (O), Naphthenes (N) and Aromatic (A).
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <img src="Mc-35.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0103030303030303em; margin-right: -0.0206868686868695em; margin-top: -0.0394343434343436em; vertical-align: -1.70412121212121em; height: 3.92351515151515em"></img>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (P-1)<span class="no-breaks"><img src="Mc-36.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.0692525252525253em; vertical-align: -1.08561616161616em; height: 2.27159595959596em"></img>=0</span>
+                </p>
+              </li>
+            </ul>
+            <p>
+              
+            </p>
+          </li>
+          <li>
+            <p>
+              Total volume fraction of Paraffins (P), Iso-paraffins (I),
+              Olefins (O), Naphthenes (N) and Aromatic (A).
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <img src="Mc-37.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0103030303030303em; margin-right: -0.020686868686866em; margin-top: -0.0692525252525251em; vertical-align: -2.31224242424242em; height: 5.16957575757576em"></img>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (P-1)<span class="no-breaks"><img src="Mc-38.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.0692525252525251em; vertical-align: -1.08561616161616em; height: 2.67519191919192em"></img>=0</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="no-breaks"><img src="Mc-39.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0103030303030303em; margin-right: -0.0413737373737373em; margin-top: -0.0109090909090909em; vertical-align: -0.258505050505051em; height: 0.714222222222222em"></img>[</span><span class="no-breaks"><img
+                  src="Mc-40.png" style="margin-left: 0em; margin-bottom: 0.0103030303030303em; margin-right: 0em; margin-top: -0.0692525252525251em; vertical-align: -1.08561616161616em; height: 2.67519191919192em"></img>]=0</span>
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          How to transform the result into coefficient matrix (<span class="no-breaks"><img
+          src="Mc-41.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333333em; margin-right: -0.0206868686868686em; margin-top: -0.0413737373737374em; vertical-align: -0.293010101010101em; height: 0.975717171717172em"></img>)</span> ?
+        </p>
+        <ul>
+          <li>
+            <p>
+              If PIONA is weight fraction
+            </p>
+            <table width="100%">
+              <tr>
+                <td width="100%" align="center"><img src="Mc-42.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333333em; margin-right: -0.0206868686868695em; margin-top: -0.0692929292929292em; vertical-align: -0.853212121212121em; height: 2.20246464646465em"></img></td>
+                <td align="right">(18)</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <p>
+              If PIONA is volum fraction
+            </p>
+            <table width="100%">
+              <tr>
+                <td width="100%" align="center"><img src="Mc-43.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868695em; margin-top: -0.0352727272727273em; vertical-align: -1.84614141414141em; height: 4.28262626262626em"></img></td>
+                <td align="right">(19)</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <p>
+              PIONA analysis gives 5 constrains for problem
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      <div style="display: inline">
+        <a id="auto-8"></a>
+      </div>
+      <h5>b) Elementary analysis<span style="margin-left: 1em"></span></h5>
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-9"></a>
+      </div>
+      <h5>c) Molecular weight<span style="margin-left: 1em"></span></h5>
+    </p>
+    <p>
+      The result of molecular weight: Bulk mixture molecular weight was
+      measured.
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-44.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(20)</td>
+      </tr>
+    </table>
+    <p>
+      How to transform the result into coefficient matrix (<span class="no-breaks"><img
+      src="Mc-41.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333333em; margin-right: -0.0206868686868686em; margin-top: -0.0413737373737374em; vertical-align: -0.293010101010101em; height: 0.975717171717172em"></img>)</span> ?
+    </p>
+    <center>
+      <img src="Mc-45.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333333em; margin-right: 0em; margin-top: -0.0206868686868686em; vertical-align: -0.293010101010101em; height: 1.12052525252525em"></img>
+    </center>
+    <p>
+      
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-10"></a>
+      </div>
+      <h5>d) Specific gravity (density)<span style="margin-left: 1em"></span></h5>
+    </p>
+    <p>
+      The result of specific gravity: Bulk mixture specific gravity or density
+      was measured.
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-46.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(21)</td>
+      </tr>
+    </table>
+    <p>
+      Or
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-47.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868695em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(22)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-48.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868678em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(23)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-49.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868695em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(24)</td>
+      </tr>
+    </table>
+    <p>
+      How to transform the result into coefficient matrix (<span class="no-breaks"><img
+      src="Mc-41.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333333em; margin-right: -0.0206868686868686em; margin-top: -0.0413737373737374em; vertical-align: -0.293010101010101em; height: 0.975717171717172em"></img>)</span> ?
+    </p>
+    <center>
+      <img src="Mc-50.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0347878787878788em; margin-right: 0em; margin-top: -0.0692525252525251em; vertical-align: -0.94840404040404em; height: 2.41842424242424em"></img>
+    </center>
+    <p>
+      <div style="display: inline">
+        <a id="auto-11"></a>
+      </div>
+      <h5>e) Distillation curve<span style="margin-left: 1em"></span></h5>
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-12"></a>
+      </div>
+      <h5>f) NMR analysis<span style="margin-left: 1em"></span></h5>
+    </p>
+    <h4 id="auto-13">2.3.2<span style="margin-left: 1em"></span>Solving the maximum entropy problem<span
+    style="margin-left: 1em"></span></h4>
+    <p>
+      <div style="display: inline">
+        <a id="auto-14"></a>
+      </div>
+      <h5>a) With exact constrains<span style="margin-left: 1em"></span></h5>
+    </p>
+    <p>
+      The molar fraction of each compound follow the distribution:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-31.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333332em; margin-right: 0em; margin-top: -0.0692525252525251em; vertical-align: -1.26909090909091em; height: 4.25107070707071em"></img></td>
+        <td align="right">(25)</td>
+      </tr>
+    </table>
+    <p>
+      Which could be rearrange with coefficient <img src="Mc-41.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333333em; margin-right: -0.0206868686868686em; margin-top: -0.0413737373737374em; vertical-align: -0.293010101010101em; height: 0.975717171717172em"></img> 
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-51.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333332em; margin-right: -0.0206868686868678em; margin-top: -0.0692525252525251em; vertical-align: -2.46791919191919em; height: 5.44989898989899em"></img></td>
+        <td align="right">(26)</td>
+      </tr>
+    </table>
+    <p>
+      Molar fraction of all compounds could be determined by solving set of J
+      non-linear equation (coressponding to J constrains) to obtain J &lambda;
+      values. The problem can be solve using <class style="font-variant: small-caps">matlab</class> or
+      <class style="font-variant: small-caps">python</class> (<em>fsolve, optimization toolbox, <span
+      style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>.<span style="margin-left: 0.16665em"></span>)</em>
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-52.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0em; margin-right: -0.0206868686868686em; margin-top: -0.0206868686868686em; vertical-align: -1.12432323232323em; height: 2.8459797979798em"></img></td>
+        <td align="right">(27)</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-53.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0413333333333332em; margin-right: -0.0206868686868695em; margin-top: -0.0692525252525251em; vertical-align: -2.46791919191919em; height: 5.44989898989899em"></img></td>
+        <td align="right">(28)</td>
+      </tr>
+    </table>
+    <center>
+      <div style="margin-top: 1em; margin-bottom: 1em">
+        <table style="width: 100%">
+          <tbody><tr>
+            <td style="text-align: center; padding-left: 0em; padding-right: 0em"><img class="image" src="Mc-54.Untitled Diagram.drawio.png" height="884.2728568" width="764.7765248"></img></td>
+          </tr><tr>
+            <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+          </tr><tr>
+            <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+              <font style="font-size: 84.1%"><p>
+                <b>Figure 1. </b><a id="auto-15"></a>Algorithm to perform molecule
+                reconstruction by maximizing Shannon entropy
+              </p></font>
+            </div></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </center>
+    <p>
+      <div style="display: inline">
+        <a id="auto-16"></a>
+      </div>
+      <h5>b) General case<span style="margin-left: 1em"></span></h5>
+    </p>
+    <p>
+      In the most general case, the problem includes J exact linear
+      constraints, K linear constraints with uncertainties and a single
+      constraint taking into account the normal distribution for the molecular
+      weight. The criterion that needs to be optimized is of the following
+      form:
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="Mc-55.png" style="margin-left: -0.0206868686868687em; margin-bottom: 0.0542222222222222em; margin-right: 0em; margin-top: -0.053212121212121em; vertical-align: -1.30767676767677em; height: 4.11042424242424em"></img></td>
+        <td align="right">(29)</td>
+      </tr>
+    </table>
+    <h4 id="auto-17">2.3.3<span style="margin-left: 1em"></span>Find the suitable constrain for pyrolysis
+    oil<span style="margin-left: 1em"></span></h4>
+    <p>
+      Pyrolysis oil bao gom PIONA va Ox
+    </p>
+    <p>
+      Bulk properties nao mo ta tot O va A va Oxygenated compound ?
+    </p>
+    <p>
+      Bulk properties can duoc xac dinh de dang va co linear mixing rule ?
+    </p>
+    <p>
+      Doing selectivity analysis in Aspen plus to find.
+    </p>
+  </body>
+</html>
