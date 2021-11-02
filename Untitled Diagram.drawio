@@ -1,1 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2021-11-02T12:16:12.539Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40" version="15.6.5" etag="dDgCteK6ljs8FeJhcKVC" type="github"><diagram id="1yk5y5bVGBsEiSMlYEYK">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-02T12:27:04.163Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40" etag="U2LpQyCtOglxG-cyJHVP" version="15.6.5" type="github">
+  <diagram id="1yk5y5bVGBsEiSMlYEYK" name="Page-1">
+    <mxGraphModel dx="924" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DByacIs0TyudiqMqUtIJ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontSize=15;fontColor=default;strokeColor=default;" edge="1" parent="1" source="DByacIs0TyudiqMqUtIJ-1" target="DByacIs0TyudiqMqUtIJ-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-11" value="represented by" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="DByacIs0TyudiqMqUtIJ-10">
+          <mxGeometry x="0.2807" y="1" relative="1" as="geometry">
+            <mxPoint x="-29" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-1" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Molecular Library&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="290" y="160" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontColor=default;strokeColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="DByacIs0TyudiqMqUtIJ-4" target="DByacIs0TyudiqMqUtIJ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-6" value="Deterministic method" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=default;" vertex="1" connectable="0" parent="DByacIs0TyudiqMqUtIJ-5">
+          <mxGeometry x="-0.3276" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-4" value="Well known analysis, Knowledge" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fontColor=default;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;fontSize=15;fontColor=default;strokeColor=default;" edge="1" parent="1" source="DByacIs0TyudiqMqUtIJ-7" target="DByacIs0TyudiqMqUtIJ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-9" value="Stochastic method" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="DByacIs0TyudiqMqUtIJ-8">
+          <mxGeometry x="-0.3984" relative="1" as="geometry">
+            <mxPoint x="-38" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-7" value="Monte Carlo techniques" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fontColor=default;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="640" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DByacIs0TyudiqMqUtIJ-12" value="Pure component&lt;br&gt;SOL&lt;br&gt;MTHS" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontSize=15;fontColor=default;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="680" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
