@@ -1,1 +1,37 @@
-<mxfile host="app.diagrams.net" modified="2021-11-12T14:53:17.974Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40" version="15.7.3" etag="prGF2-nVc2mIKHRjLw3j" type="github"><diagram id="Wq35uOlfw6EIPfe593yy">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-12T14:57:17.127Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40" etag="EYh7DN-HhK7ph5o3AuLE" version="15.7.3" type="github">
+  <diagram id="Wq35uOlfw6EIPfe593yy" name="Page-1">
+    <mxGraphModel dx="990" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cIVPF-KHb9rp9ufHb2nG-1" target="cIVPF-KHb9rp9ufHb2nG-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cIVPF-KHb9rp9ufHb2nG-1" target="cIVPF-KHb9rp9ufHb2nG-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cIVPF-KHb9rp9ufHb2nG-1" target="cIVPF-KHb9rp9ufHb2nG-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cIVPF-KHb9rp9ufHb2nG-1" target="cIVPF-KHb9rp9ufHb2nG-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-1" value="Hydrocarbon [HC]" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-2" value="Paraffins" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-3" value="Aromatic" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="600" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-4" value="Naphthenes" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="427" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cIVPF-KHb9rp9ufHb2nG-5" value="Olefins" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="253" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
